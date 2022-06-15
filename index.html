@@ -5,20 +5,20 @@ title: Portfolio
 <head> 
 
     <style>
-        p {
-         text-align:center
-        }
 
-        
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+            text-align:center
+        }    
+    
         .container {
     display: grid;
         grid-template-areas:
-      "header header"
-      "sidebar sidebar"
-      "header header"
-      "content content"
-      "content content"
-      "content content"
+        "header header"
+      "sidebar content"
       "footer footer";
   grid-template-columns: 1fr 3fr;
   gap: 20px;
@@ -37,117 +37,40 @@ title: Portfolio
       transform: translate(-50%, -50%);
     }
 
-    header {
-  grid-area: header;
-}
+    header,
+        footer {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207,232,220);
+            border: 2px solid rgb(79,185,227);
+        }
 
 article {
   grid-area: content;
 }
 
 aside {
-  grid-area: sidebar;
-}
+            border-right: 1px solid #999;
+        }
 
-footer {
-  grid-area: footer;
-}
-
-
-    
         </style>
 
 </head>
 
 
-<body>     
-    <div class="container">
-<p> 
-            <h1>{{ "Acerca de mi" | Uppercase }}</h1>
-    <aside>
-        Soy un ingeniero mecatronico con intereses en el diseño, modelado y manufactura de modelos 3d. Mi experiencia actual se centra en la industria automotriz
-        donde he desarollado elemntos de apoyo para la manufactura de los sistemas electricos de un auto. 
-        Esto conlleva la creacion de elementos mecanicos para el incremento de la ergonomia, asi como la optimizacion de los flujos de trabajo. 
-        Ademas cuento con experiencia en los ambitos de electronica y programacion.<br>
-        <br>
+<body>
+<div class="container">
 
-    He completado mi ingeneira en la Universidad Autonoma de Yucatan en diciembre del 2021  <br>
-    <br>
+    <header>This is my lovely blog</header>
+    <article>
+            <h1>My article</h1>
+            <p>Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
 
-    Esta pagina contiene algunos de los modelos que he desarollado en mi estadia laboral desde la finalizacion de mi carrera.  <br>
-    <br>
-
-    </aside>
-    
-        
-
-        <h1>{{ "Proyectos" | Uppercase }}</h1>      
-
-        <article>
-
-        <div class="imageText"> 
-            <img src="pictures/Holder.png" alt="Snow" style="width:50%;">
-            <div class="centered">Centered</div>
-        </div>
-            
-         </article>
-
-         <article>
-            <img src="pictures/tierra.JPG" alt="Snow" style="width:50%;">
-            <div class="centered">Centered</div>
-         </article>   
-
-         <article>
-            <img src="pictures/carrito.jpg" alt="Snow" style="width:50%;">
-            <div class="centered">Centered</div>
-         </article>   
-         <article>
-            <img src="pictures/ergonomia.jpg" alt="Snow" style="width:50%;">
-            <div class="centered">Centered</div>
-         </article>   
-         <article>
-            <img src="pictures/Holder.png" alt="Snow" style="width:50%;">
-            <div class="centered">Centered</div>
-         </article>   
-
-         <article>
-            <img src="pictures/Holder.png" alt="Snow" style="width:50%;">
-            <div class="centered">Centered</div>
-         </article> 
-
-      
-
-
-
-      <h1>{{ "Experiencia laboral" | Uppercase }}</h1>
-    
-        <article>
-            <img src="pictures/leoni.jpg" alt="Snow" style="width:50%;">
-            <div class="centered">Centered</div>
-        </article>
-        
-
-
-      <h1>{{ "Contacto" | Uppercase }}</h1>
-
-      <section id="sidebar">
-          <a href="https://www.google.com/" target="_blank">	
-              <img class="sidebarIcon icon" src="icons/Facebook.png"/>
-          </a>
-          <a href="https://www.google.com/" target="_blank">
-              <img class="sidebarIcon icon" src="icons/YouTube.png"/>
-          </a>
-          <a href="https://www.google.com/" target="_blank">
-              <img class="sidebarIcon icon" src="icons/LinkedIn.png"/>
-          </a>
-          <a href="https://www.google.com/" target="_blank">
-              <img class="sidebarIcon icon" src="icons/Github.png"/>
-          </a>
-      </section>
-    
-     </p>
-    </div>
-
+            <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </article>
+    <aside><h2>Other things</h2>
+        <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p></aside>
+    <footer>Contact me@mysite.com</footer>
+</div>
 
 </body>
-
