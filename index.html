@@ -8,15 +8,24 @@ title: Portfolio
         p {
          text-align:center
         }
-    
+
+        
         .container {
+    display: grid;
+        grid-template-areas:
+      "header sidebar"
+      "header header"
+      "content content"
+      "content content"
+      "content content"
+      "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+        .imageText {
       position: relative;
       text-align: center;
       color: white;
-      display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(100px, auto);
-    gap: 20px;
     }
 
     
@@ -27,6 +36,22 @@ title: Portfolio
       transform: translate(-50%, -50%);
     }
 
+    header {
+  grid-area: header;
+}
+
+article {
+  grid-area: content;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+
 
     
         </style>
@@ -35,29 +60,41 @@ title: Portfolio
 
 
 <body>     
-        <p> 
+    <div class="container">
+    <article>
+<p> 
             <h1>{{ "Acerca de mi" | Uppercase }}</h1>
-    
-    
+    <aside>
         Soy un ingeniero mecatronico con intereses en el diseño, modelado y manufactura de modelos 3d. Mi experiencia actual se centra en la industria automotriz
-            donde he desarollado elemntos de apoyo para la manufactura de los sistemas electricos de un auto. 
-            Esto conlleva la creacion de elementos mecanicos para el incremento de la ergonomia, asi como la optimizacion de los flujos de trabajo. 
-            Ademas cuento con experiencia en los ambitos de electronica y programacion.<br>
-            <br>
-    
-        He completado mi ingeneira en la Universidad Autonoma de Yucatan en diciembre del 2021  <br>
+        donde he desarollado elemntos de apoyo para la manufactura de los sistemas electricos de un auto. 
+        Esto conlleva la creacion de elementos mecanicos para el incremento de la ergonomia, asi como la optimizacion de los flujos de trabajo. 
+        Ademas cuento con experiencia en los ambitos de electronica y programacion.<br>
         <br>
+
+    He completado mi ingeneira en la Universidad Autonoma de Yucatan en diciembre del 2021  <br>
+    <br>
+
+    Esta pagina contiene algunos de los modelos que he desarollado en mi estadia laboral desde la finalizacion de mi carrera.  <br>
+    <br>
+
+    </aside>
     
-        Esta pagina contiene algunos de los modelos que he desarollado en mi estadia laboral desde la finalizacion de mi carrera.  <br>
-        <br>
+        
 
         <h1>{{ "Proyectos" | Uppercase }}</h1>
+        
+    </article>
+        
     
-        <div class="container">
+       
 
         <article>
+
+        <div class="imageText"> 
             <img src="pictures/Holder.png" alt="Snow" style="width:50%;">
             <div class="centered">Centered</div>
+        </div>
+            
          </article>
 
          <article>
@@ -83,20 +120,17 @@ title: Portfolio
             <div class="centered">Centered</div>
          </article> 
 
-          </div>
       
 
 
 
       <h1>{{ "Experiencia laboral" | Uppercase }}</h1>
     
-      <div class="container">
         <article>
             <img src="pictures/leoni.jpg" alt="Snow" style="width:50%;">
             <div class="centered">Centered</div>
         </article>
         
-      </div>
 
 
       <h1>{{ "Contacto" | Uppercase }}</h1>
@@ -117,7 +151,7 @@ title: Portfolio
       </section>
     
      </p>
-
+    </div>
 
 
 </body>
