@@ -60,6 +60,47 @@ title: Portfolio
   }
 }
 
+.wrapper {
+font-family: sans-serif;
+width: 80%;
+margin: 0 auto;
+position: relative;
+}
+img {
+display: block;
+width: 100%;
+height: auto;
+}
+.content {
+position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+color: #fff;
+text-transform: uppercase;
+font-size: 60px;
+}
+.content span{
+font-size: 24px;
+display: block
+}
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color: #ff771d;
+}
+.wrapper:hover .overlay {
+opacity: 1;
+}
+
     </style>
 <body> 
 
@@ -84,13 +125,15 @@ title: Portfolio
     
         <div class="row"> 
             <div class="column">
-                  <div class="container">
-                    <img src="pictures/tierra.JPG" alt="Snow" style="width:100%;">
-                    <div class="centered">Centered</div>
-                  </div>
+                  <div class="wrapper">
+                    <img src="pictures/ergonomia.jpg">
+                    <div class="overlay">
+                    <div class="content">Fade In<span>Fade In text</span></div>
+                    </div>
+                    </div>
 
                   <div class="container">
-                    <img src="pictures/carrito.jpg" alt="Snow" style="width:120%;">
+                    <img src="pictures/carrito.jpg" alt="Snow" style="width:80%;">
                     <div class="centered">Centered</div>
                   </div>
 
@@ -98,7 +141,7 @@ title: Portfolio
             <div class="column">
 
                 <div class="container">
-                    <img src="pictures/Holder.png" alt="Snow" style="width:150%;">
+                    <img src="pictures/Holder.png" alt="Snow" style="width:100%;">
                     <div class="centered">Centered</div>
                   </div>
 
@@ -107,7 +150,7 @@ title: Portfolio
             <div class="column">
 
                   <div class="container">
-                    <img src="pictures/pagoda.jpg" alt="Snow" style="width:110%;">
+                    <img src="pictures/pagoda.jpg" alt="Snow" style="width:70%;">
                     <div class="centered">Centered</div>
                   </div>
 
@@ -116,7 +159,7 @@ title: Portfolio
             <div class="column">
 
                 <div class="container">
-                    <img src="pictures/market.jpg" alt="Snow" style="width:100%;">
+                    <img src="pictures/market.jpg" alt="Snow" style="width:90%;">
                     <div class="centered">Centered</div>
                   </div>
 
