@@ -17,8 +17,13 @@
 
     <div class="container">
       <section id="main_content">
-        {% include navigation.html %}
-        {{ content }}
+        <style>p {
+          text-align:left
+         }</style>
+    <p>
+      {% include navigation.html %}
+      {{ content }}</p>
+
       </section>
     </div>
   </body>
