@@ -37,21 +37,21 @@ title: Portfolio
       transform: translate(-50%, -50%);
     }
 
-    header,
-        footer {
-            border-radius: 5px;
-            padding: 10px;
-            background-color: rgb(207,232,220);
-            border: 2px solid rgb(79,185,227);
-        }
+    header {
+  grid-area: header;
+}
 
 article {
   grid-area: content;
 }
 
 aside {
-            border-right: 1px solid #999;
-        }
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
 
         </style>
 
