@@ -7,12 +7,6 @@ title: Portfolio
      text-align:center
     }
 
-    .container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
 .centered {
   position: absolute;
   top: 50%;
@@ -82,7 +76,7 @@ text-transform: uppercase;
 font-size: 60px;
 }
 .content span{
-font-size: 24px;
+font-size: 12px;
 display: block
 }
 .overlay {
@@ -93,9 +87,9 @@ left: 0;
 right: 0;
 height: 100%;
 width: 100%;
-opacity: 0;
+opacity: .5;
 transition: .5s ease;
-background-color: #ff771d;
+background-color: #4b4b4aed;
 }
 .wrapper:hover .overlay {
 opacity: 1;
@@ -125,44 +119,57 @@ opacity: 1;
     
         <div class="row"> 
             <div class="column">
-                  <div class="wrapper">
+                <div class="wrapper">
                     <img src="pictures/ergonomia.jpg">
                     <div class="overlay">
-                    <div class="content">Fade In<span>Fade In text</span></div>
+                        <div class="content">Fade In<span>Fade In text</span></div>
                     </div>
+                </div>
+
+                    <div class="wrapper">
+                        <img src="pictures/carrito.jpg">
+                        <div class="overlay">
+                            <div class="content">Fade In<span>Fade In text</span></div>
+                        </div>
                     </div>
-
-                  <div class="container">
-                    <img src="pictures/carrito.jpg" alt="Snow" style="width:80%;">
-                    <div class="centered">Centered</div>
-                  </div>
-
             </div>
             <div class="column">
 
-                <div class="container">
-                    <img src="pictures/Holder.png" alt="Snow" style="width:100%;">
-                    <div class="centered">Centered</div>
-                  </div>
+                <div class="wrapper">
+                    <img src="pictures/Holder.png">
+                    <div class="overlay">
+                        <div class="content">Fade In<span>Fade In text</span></div>
+                    </div>
+                </div>
 
             </div>  
 
             <div class="column">
 
-                  <div class="container">
-                    <img src="pictures/pagoda.jpg" alt="Snow" style="width:70%;">
-                    <div class="centered">Centered</div>
-                  </div>
+                <div class="wrapper">
+                    <img src="pictures/pagoda.jpg">
+                    <div class="overlay">
+                        <div class="content">Fade In<span>Fade In text</span></div>
+                    </div>
+                </div>
 
             </div>  
 
             <div class="column">
 
-                <div class="container">
-                    <img src="pictures/market.jpg" alt="Snow" style="width:90%;">
-                    <div class="centered">Centered</div>
-                  </div>
-
+                <div class="wrapper">
+                    <img src="pictures/market.jpg">
+                    <div class="overlay">
+                        <div class="content">Fade In<span>Fade In text</span></div>
+                    </div>
+                </div>
+                
+                <div class="wrapper">
+                    <img src="pictures/tierra.JPG">
+                    <div class="overlay">
+                        <div class="content">Fade In<span>Fade In text</span></div>
+                    </div>
+                </div>
 
             </div>  
         </div>
@@ -170,10 +177,12 @@ opacity: 1;
 
       <h1>{{ "Experiencia laboral" | Uppercase }}</h1>
     
-      <div class="container">
-        <img src="pictures/leoni.jpg" alt="Snow" style="width:50%;">
-        <div class="centered">Centered</div>
-      </div>
+      <div class="wrapper">
+        <img src="pictures/leoni.jpg">
+        <div class="overlay">
+            <div class="content">Fade In<span>Fade In text</span></div>
+        </div>
+    </div>
 
 
           <h1>{{ "Contacto" | Uppercase }}</h1>
