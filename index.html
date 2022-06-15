@@ -16,10 +16,25 @@ title: Portfolio
         donde he desarollado elemntos de apoyo para la manufactura de los sistemas electricos de un auto. 
         Esto conlleva la creacion de elementos mecanicos para el incremento de la ergonomia, asi como la optimizacion de los flujos de trabajo. 
         Ademas cuento con experiencia en los ambitos de electronica y programacion.<br>
+        <br>
 
     He completado mi ingeneira en Universidad Autonoma de Yucatan en 2022  <br>
+    <br>
 
     Esta pagina contiene algunos de los modelos que he desarollado en estadia laboral desde la finalizacion de mi carrera. <br>
+    <br>
+
+    
+<ul>
+    {% for post in site.posts %}
+      <li>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+  
+
     </p>
 
 
