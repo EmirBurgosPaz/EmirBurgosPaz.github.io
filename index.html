@@ -13,6 +13,10 @@ title: Portfolio
       position: relative;
       text-align: center;
       color: white;
+      display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
     }
 
     
@@ -22,6 +26,8 @@ title: Portfolio
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+
     
         </style>
 
@@ -48,42 +54,48 @@ title: Portfolio
         <h1>{{ "Proyectos" | Uppercase }}</h1>
     
         <div class="container">
+
+        <article>
             <img src="pictures/Holder.png" alt="Snow" style="width:50%;">
             <div class="centered">Centered</div>
-          </div>
-      
-        <div class="container">
+         </article>
+
+         <article>
             <img src="pictures/tierra.JPG" alt="Snow" style="width:50%;">
             <div class="centered">Centered</div>
-          </div>
-        
-        <div class="container">
+         </article>   
+
+         <article>
             <img src="pictures/carrito.jpg" alt="Snow" style="width:50%;">
             <div class="centered">Centered</div>
-          </div>
-
-        <div class="container">
+         </article>   
+         <article>
             <img src="pictures/ergonomia.jpg" alt="Snow" style="width:50%;">
             <div class="centered">Centered</div>
-          </div>
-
-          <div class="container">
+         </article>   
+         <article>
             <img src="pictures/Holder.png" alt="Snow" style="width:50%;">
             <div class="centered">Centered</div>
-          </div>
+         </article>   
 
-          <div class="container">
+         <article>
             <img src="pictures/Holder.png" alt="Snow" style="width:50%;">
             <div class="centered">Centered</div>
+         </article> 
+
           </div>
+      
 
 
 
       <h1>{{ "Experiencia laboral" | Uppercase }}</h1>
     
       <div class="container">
-        <img src="pictures/leoni.jpg" alt="Snow" style="width:50%;">
-        <div class="centered">Centered</div>
+        <article>
+            <img src="pictures/leoni.jpg" alt="Snow" style="width:50%;">
+            <div class="centered">Centered</div>
+        </article>
+        
       </div>
 
 
