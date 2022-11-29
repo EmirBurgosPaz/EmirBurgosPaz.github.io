@@ -103,6 +103,7 @@ input, select, textarea {
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
+		margin-left: 35%;
 	}
 
 	a {
@@ -3222,15 +3223,7 @@ input, select, textarea {
 
 	}
 
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-	height: 100%;
-	font-family: Arial;
-	position: absolute;
-	left: 35%;
-	margin-right: -60em;
-	overflow-x: hidden;
-  }
+
   
   /* Style tab links */
   .tablink {
