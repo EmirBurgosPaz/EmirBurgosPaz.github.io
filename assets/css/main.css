@@ -3256,9 +3256,4 @@ input, select, textarea {
   #About {background-color: #1d2228;}
   #Contact {background-color: #1d2228;}
 
-  .layout_fix {
-	width: 80%;
-	margin-top: -20%;
-	margin-left: 450px;
-	position: relative;
-  }
+ 
