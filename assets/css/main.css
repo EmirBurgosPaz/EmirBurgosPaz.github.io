@@ -206,7 +206,7 @@ input, select, textarea {
 	}
 
 	code {
-		background: #f7f7f7;
+		background: #49bf9d;
 		border-radius: 0.35em;
 		border: solid 2px #efefef;
 		font-family: "Courier New", monospace;
@@ -3259,5 +3259,5 @@ body, html {
   
   #Home {background-color: #1d2228;}
   #News {background-color: #1d2228;}
-  #Contact {background-color: #1d2228;}
   #About {background-color: #1d2228;}
+  #Contact {background-color: #1d2228;}
