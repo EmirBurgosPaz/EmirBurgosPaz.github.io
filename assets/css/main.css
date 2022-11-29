@@ -2071,7 +2071,7 @@ input, select, textarea {
 				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
-				border: solid 3px rgba(255, 255, 255, 0.5);
+				border: solid 3px #ffffff80;
 				color: #fff;
 				content: 'View';
 				display: inline-block;
@@ -2380,7 +2380,7 @@ input, select, textarea {
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: #f7f7f7;
+				background-color: #49bf9d;
 			}
 
 		table td {
