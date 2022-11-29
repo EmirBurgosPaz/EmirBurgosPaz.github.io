@@ -3222,7 +3222,14 @@ input, select, textarea {
 
 	}
 
-/* Set height of body and the document to 100% to enable "full page tabs" *
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+	height: 100%;
+	font-family: Arial;
+	position: absolute;
+	left: 35%;
+	margin-right: -60em;
+  }
   
   /* Style tab links */
   .tablink {
