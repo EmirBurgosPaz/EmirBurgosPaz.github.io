@@ -2606,6 +2606,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 35%;
+		
 	}
 
 		#header > * {
@@ -2683,10 +2684,10 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
-		max-width: 54em;
+		max-width: 100%;
 		padding: 8em 4em 4em 4em;
-		width: calc(100% - 35%);
+		width: 100%;
+		overflow-x: hidden;
 	}
 
 		#main > section {
@@ -3220,3 +3221,44 @@ input, select, textarea {
 			}
 
 	}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial;
+	position: absolute;
+	left: 300px;
+	margin-right: -1600px	
+  }
+  
+  /* Style tab links */
+  .tablink {
+	background-color: #49bf9d;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 25%;
+	
+  }
+  
+  .tablink:hover {
+	background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+	color: white;
+	display: none;
+	padding: 10px 20px;
+	height: 100%;
+  }
+  
+  #Home {background-color: #1d2228;}
+  #News {background-color: #1d2228;}
+  #Contact {background-color: #1d2228;}
+  #About {background-color: #1d2228;}
