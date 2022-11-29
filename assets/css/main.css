@@ -383,7 +383,7 @@ pre code {
 
 /* Style tab links */
 .tablink {
-	background-color: #49bf9d;
+	background-color: #1d2228;
 	color: white;
 	float: left;
 	border: none;
@@ -410,19 +410,34 @@ pre code {
 .fixed-header, .fixed-footer{
 	width: 100%;
 	position: fixed;        
-	background: #333;
+	background: #1d2228;
 	padding: 10px 0;
 	color: #fff;
+	z-index: 99;
+	background-image: url("images/avatar.jpg");
 }
 .fixed-header{
 	top: 0;
+	
 }
 .fixed-footer{
 	bottom: 0;
+	margin-bottom: -2%;
 }
 .container{
 	width: 80%;
 	margin: 0 auto; /* Center the DIV horizontally */
+}
+
+#element1 {
+	display: inline-block;
+	margin-right: 45%;
+	width: 30%;
+}
+
+#element2 {
+	display: inline-block;
+	width:20%;
 }
 
 #Home {
