@@ -217,9 +217,13 @@ a:hover {
 	text-decoration: none;
 }
 
-strong,
-b {
+strong{
 	color: #fb8122;
+	font-weight: 400;
+}
+
+b {
+	color: #49bf9d;
 	font-weight: 400;
 }
 
@@ -349,6 +353,10 @@ pre code {
 	text-align: right;
 }
 
+.captation{
+	text-align: center;
+}
+
 /* Container */
 
 .container {
@@ -389,9 +397,9 @@ pre code {
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 2% 10%;
-	font-size: 100%;
+	padding: 2% 8%;
 	width: 25%;
+	font-size: 100%;
 }
 
 .tablink:hover {
@@ -440,19 +448,19 @@ pre code {
 	width:20%;
 }
 
-#Home {
+#Inicio {
 	background-color: #1d2228;
 }
 
-#News {
+#Trabajos {
 	background-color: #1d2228;
 }
 
-#About {
+#Acerca {
 	background-color: #1d2228;
 }
 
-#Contact {
+#Contacto {
 	background-color: #1d2228;
 }
 
@@ -504,6 +512,7 @@ textarea{
 
 .row.aln-center {
 	justify-content: center;
+	width: auto;
 }
 
 .row.aln-right {
@@ -2199,6 +2208,20 @@ input[type="radio"]+label:before {
 
 /* Image */
 
+.pic{
+	width:160px;
+	height:180px ;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	text-align: center;
+
+  }
+  .pic:hover
+  {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+  }
+
 .image {
 	border-radius: 0.35em;
 	border: 0;
@@ -2255,6 +2278,7 @@ input[type="radio"]+label:before {
 	opacity: 1.0;
 }
 
+
 .image.thumb:hover:before {
 	background: url("images/overlay.png"), url("images/overlay.png");
 	opacity: 1.0;
@@ -2280,11 +2304,20 @@ input[type="radio"]+label:before {
 .image.left,
 .image.right {
 	max-width: 40%;
+	text-align: justify;
+	font-size: small;
 }
 
 .image.left img,
 .image.right img {
 	width: 100%;
+	display: block;
+    margin: 0 auto;
+}
+
+
+.caption {
+    display: block;
 }
 
 .image.fit {
