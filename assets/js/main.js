@@ -118,7 +118,7 @@
 
 })(jQuery);
 
-
+$("a.image").each(function(){$(this).attr('title',$(this).find("img").attr('title'))});
 
 function openPage(pageName, elmnt, color) {
 	// Hide all elements with class="tabcontent" by default */
