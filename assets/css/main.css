@@ -2232,8 +2232,6 @@ input[type="radio"]+label:before {
 	-webkit-transition-property: all; 
 	-webkit-transition-duration: 0.3s; 
 	-webkit-transition-timing-function: ease; 
-	background-color: #49bf9d;
-	content: attr(title);
 	} 
 	
 	/*change the number below to scale to the appropriate size*/ 
@@ -2241,12 +2239,6 @@ input[type="radio"]+label:before {
 
 	.image.thumbnail:hover{ 
 	transform: scale(2); 
-	}
-
-	
-
-	.image.thumbnail:hover:after{ 
-		opacity: 1;
 	}
 
 .image {
