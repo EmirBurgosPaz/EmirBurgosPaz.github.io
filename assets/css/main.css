@@ -394,6 +394,13 @@ pre code {
     padding: 30px 30px 50px;
     border-radius: 10px;
     box-shadow: 0 20px 30px #00000033;
+}
+
+.container.shadow {
+	width: 100%;
+    padding: 30px 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px #00000033;
 } 
 
 .container.animated *{
@@ -2386,7 +2393,7 @@ input[type="radio"]+label:before {
 
 .image.left {
 	float: left;
-	margin: 0 1.5em 1em 0;
+	margin: 0 1.5em 1em 2em;
 	top: 0.25em;
 }
 
