@@ -446,6 +446,15 @@ pre code {
         width: 80%;
     }
 }
+#dash-bar{
+    animation: dash-fill 2s forwards;
+}
+@keyframes dash-fill{
+    100%{
+        width: 20%;
+    }
+}
+
 
 #excel-bar{
     animation: excel-fill 2s forwards;
