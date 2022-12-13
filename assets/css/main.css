@@ -510,7 +510,7 @@ pre code {
 	background: #1d2228;
 	padding: 10px 0;
 	color: #fff;
-	z-index: 100;
+	z-index: 1;
 	background-image: url("images/avatar.jpg");
 }
 .fixed-header{
