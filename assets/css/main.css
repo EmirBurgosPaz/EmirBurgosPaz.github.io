@@ -2408,6 +2408,14 @@ input, select, textarea {
 				order: 4;
 			  }
 
+			  .re-order .row .fifth {
+				order: 5;
+			  }
+
+			  .re-order .row .six {
+				order: 6;
+			  }
+
 	}
 
 /* Narrower */
@@ -2634,6 +2642,14 @@ input, select, textarea {
 					order: 4;
 				  }
 
+				  .re-order .row .fifth {
+					order: 5;
+				  }
+
+				  .re-order .row .six {
+					order: 6;
+				  }
+
 	}
 
 /* Mobile */
@@ -2716,11 +2732,17 @@ input, select, textarea {
 				  .re-order .row .fourth {
 					order: 4;
 				  }
+
+				  .re-order .row .fifth {
+					order: 5;
+				  }
+
+				  .re-order .row .six {
+					order: 6;
+				  }
 	}
 
 	/* playgroudn*/
-
-
 
 	.u-center {
 		display: flex;
