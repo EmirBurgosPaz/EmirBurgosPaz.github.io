@@ -2386,6 +2386,19 @@ input, select, textarea {
 				margin-left: 20%;
 			}
 
+			.first {
+				order: 1;
+			  }
+			  .second {
+				order: 2;
+			  }
+			  .third {
+				order: 4;
+			  }
+			  .fourth {
+				order: 3;
+			  }
+
 	}
 
 /* Narrower */
@@ -2585,6 +2598,22 @@ input, select, textarea {
 					padding: 4em 0;
 				}
 
+
+				div.two-column-div, .three-column-div{
+					column-count: 1;
+				}
+
+				.re-order .row {
+					display: flex;
+					display: -ms-flex;
+					flex-direction: column;
+				  }
+				  .re-order .row .first {
+					order: 2;
+				  }
+				  .re-order .row .second {
+					order: 1;
+				  }
 	}
 
 /* Mobile */
@@ -2646,6 +2675,17 @@ input, select, textarea {
 					column-count: 1;
 				}
 	
+				.re-order .row {
+					display: flex;
+					display: -ms-flex;
+					flex-direction: column;
+				  }
+				  .re-order .row .first {
+					order: 2;
+				  }
+				  .re-order .row .second {
+					order: 1;
+				  }
 	}
 
 	/* playgroudn*/
@@ -2902,6 +2942,9 @@ input, select, textarea {
 		text-align: center;
 		font-size: 16px;
 		background-color: #005cff;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
 	  }
 	  
 	  figure.snip1478 img {
